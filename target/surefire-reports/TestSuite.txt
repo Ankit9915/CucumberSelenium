@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 3.634 s <<< FAILURE! - in TestSuite
+cucumberOptions.TestNGTestRunner.runScenario["Search Experience for product search in both home and offers page", "Search and Place the order for Products"](1)  Time elapsed: 1.422 s  <<< FAILURE!
+org.openqa.selenium.remote.NoSuchDriverException: 
+chromedriver located at C:\Windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+
+cucumberOptions.TestNGTestRunner.runScenario["Search Experience for product search in both home and offers page", "Place the order for Products"](2)  Time elapsed: 1.431 s  <<< FAILURE!
+org.openqa.selenium.remote.NoSuchDriverException: 
+chromedriver located at C:\Windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+
+cucumberOptions.TestNGTestRunner.runScenario["Search Experience for product search in both home and offers page", "Search and Place the order for Products"](3)  Time elapsed: 1.435 s  <<< FAILURE!
+org.openqa.selenium.remote.NoSuchDriverException: 
+chromedriver located at C:\Windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\116.0.5845.96\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: ChromeDriver
+

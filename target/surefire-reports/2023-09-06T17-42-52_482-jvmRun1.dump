@@ -1,0 +1,134 @@
+# Created at 2023-09-06T17:42:55.080
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (4748@Ankit):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.7/java.lang.StringBuilder.<init>(StringBuilder.java:131)
+        at java.base@17.0.7/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:110)
+        at java.base@17.0.7/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+        at java.base@17.0.7/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+        at java.base@17.0.7/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+        at java.base@17.0.7/java.lang.Class.getGenericInterfaces(Class.java:1211)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.util.ClassUtil.getGenericInterfaces(ClassUtil.java:1361)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory._resolveSuperInterfaces(TypeFactory.java:1549)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory._fromClass(TypeFactory.java:1500)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory._fromParamType(TypeFactory.java:1642)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory._fromAny(TypeFactory.java:1405)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory._resolveSuperInterfaces(TypeFactory.java:1557)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory._fromClass(TypeFactory.java:1500)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory._fromParamType(TypeFactory.java:1642)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory._fromAny(TypeFactory.java:1405)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.type.TypeFactory.resolveMemberType(TypeFactory.java:796)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.introspect.AnnotatedClass.resolveType(AnnotatedClass.java:233)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.introspect.AnnotatedConstructor.getParameterType(AnnotatedConstructor.java:106)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.introspect.AnnotatedWithParams.getParameter(AnnotatedWithParams.java:86)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector._addCreators(POJOPropertiesCollector.java:644)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector.collectAll(POJOPropertiesCollector.java:451)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector.getJsonValueAccessor(POJOPropertiesCollector.java:286)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.introspect.BasicBeanDescription.findJsonValueAccessor(BasicBeanDescription.java:258)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.BasicSerializerFactory.findSerializerByAnnotations(BasicSerializerFactory.java:393)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2(BeanSerializerFactory.java:225)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.BeanSerializerFactory.createSerializer(BeanSerializerFactory.java:174)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.SerializerProvider._createUntypedSerializer(SerializerProvider.java:1503)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.SerializerProvider._createAndCacheUntypedSerializer(SerializerProvider.java:1471)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.SerializerProvider.findPrimaryPropertySerializer(SerializerProvider.java:687)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer._findSerializer(ReferenceTypeSerializer.java:485)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer.createContextual(ReferenceTypeSerializer.java:213)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.SerializerProvider.handleSecondaryContextualization(SerializerProvider.java:1121)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer(SerializerProvider.java:607)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.resolve(BeanSerializerBase.java:374)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.SerializerCache.addAndResolveNonTypedSerializer(SerializerCache.java:209)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.SerializerProvider._createAndCacheUntypedSerializer(SerializerProvider.java:1461)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer(SerializerProvider.java:556)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.SerializerProvider.findTypedValueSerializer(SerializerProvider.java:834)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:307)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4719)
+        at app//io.cucumber.core.internal.com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3947)
+        at app//io.cucumber.core.plugin.HtmlFormatter$$Lambda$233/0x0000000800d5b558.writeValue(Unknown Source)
+        at app//io.cucumber.htmlformatter.MessagesToHtmlWriter.write(MessagesToHtmlWriter.java:80)
+        at app//io.cucumber.core.plugin.HtmlFormatter.write(HtmlFormatter.java:34)
+        at app//io.cucumber.core.plugin.HtmlFormatter$$Lambda$251/0x0000000800d9bce0.receive(Unknown Source)
+        at app//io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+        at app//io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+        at app//io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+        at app//io.cucumber.core.runtime.CucumberExecutionContext.emitMeta(CucumberExecutionContext.java:62)
+        at app//io.cucumber.core.runtime.CucumberExecutionContext.startTestRun(CucumberExecutionContext.java:57)
+        at app//io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:123)
+        at app//io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+        at java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+        at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+        at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+        at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+        at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+        at app//org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+        at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+        at app//org.testng.TestRunner$$Lambda$163/0x0000000800ca8de8.accept(Unknown Source)
+        at java.base@17.0.7/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.testng.TestRunner.privateRun(TestRunner.java:848)
+        at app//org.testng.TestRunner.run(TestRunner.java:621)
+        at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+        at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+        at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+        at app//org.testng.SuiteRunner.run(SuiteRunner.java:336)
+        at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+        at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+        at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+        at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+        at app//org.testng.TestNG.runSuites(TestNG.java:1114)
+        at app//org.testng.TestNG.run(TestNG.java:1082)
+        at app//org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+        at app//org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+        at app//org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+        at app//org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.7/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@17.0.7/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+        at java.base@17.0.7/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.7/java.lang.Object.wait(Native Method)
+        at java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@17.0.7/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.7/java.lang.Object.wait(Native Method)
+        at java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.7/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+        at java.base@17.0.7/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@17.0.7/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@17.0.7/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:649)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$400(ForkedBooter.java:82)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:340)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:423)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:435)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:388)
+        at java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+
+
+
